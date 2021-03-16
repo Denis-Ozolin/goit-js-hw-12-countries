@@ -13,4 +13,4 @@ const errorNotificationMessage = 'Too many matches found. Please enter a more sp
     })
   }
 
-  export default onErrorNotification;
+  export default onErrorNotification; 

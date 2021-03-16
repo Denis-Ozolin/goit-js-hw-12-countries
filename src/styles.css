@@ -1,6 +1,3 @@
-@import '../node_modules/@pnotify/core/dist/BrightTheme.css';
-@import '../node_modules/@pnotify/mobile/dist/PNotifyMobile.css';
-
 html {
   box-sizing: border-box;
 }
@@ -12,7 +9,91 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.country{
+  padding: 25px;
+}
+
+.country__input{
+  width: 600px;
+  height: 34px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
+.country__search-list > li{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.country__title{
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 2px solid green;
+}
+
+.country__categories-list{
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.country__wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: lightyellow;
+  border: 2px solid green;
+  border-radius: 2px;
+}
+
+.country__info{
+  width: 100%;
+}
+
+.country__categories{
+  margin-bottom: 10px;
+}
+
+.coutry__languages{
+  padding-top: 5px;
+  margin-left: 50px;
+}
+
+.country__language{
+  font-size: 16px;
+}
+
+.country__flag{
+  background-size: cover;
+}
+
+.country__img{
+  display: block;
+  width: 300px;
+  height: 250px;
+  background-size: 100%;
+}
+
+
+
