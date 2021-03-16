@@ -1,7 +1,7 @@
 import debounce from 'lodash.debounce';
 import './styles.css';
 import fetchCountries from './countries-api/fetchCountries';
-import refs from './element-refs';
+import refs from './markup/element-refs';
 
 function clearCountrySearchResult(){
   refs.countriesListRef.innerHTML = '';

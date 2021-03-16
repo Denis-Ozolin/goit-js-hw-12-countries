@@ -1,6 +1,6 @@
 import searchListTp from '../templates/search-list.hbs';
 import countryCardTp from '../templates/country.hbs';
-import refs from '../element-refs';
+import refs from './element-refs';
 import onErrorNotification from '../utils/error-notifications';
 
 function renderSearchList (countries){
