@@ -5,26 +5,25 @@ import onErrorNotification from '../utils/error-notifications';
 import clearCountrySearchResult from './clear-markup';
 
 function renderSearchList (countries){
-  clearCountrySearchResult();
   refs.countriesListRef.insertAdjacentHTML("afterbegin", searchListTp(countries));
 }
 
 function renderCountryCard (country){
-  clearCountrySearchResult();
   refs.countryCardRef.insertAdjacentHTML("afterbegin", countryCardTp(country));
 }
 
 function renderSearchResult(data){
+  clearCountrySearchResult();
+
   if(data.length === 1){
     renderCountryCard(data);
   }
 
-  if(data.length > 1 && data.length <= 10){
+  else if(data.length > 1 && data.length <= 10){
     renderSearchList(data);
   }
 
   else{
-    clearCountrySearchResult();
     onErrorNotification();
   }
 }
