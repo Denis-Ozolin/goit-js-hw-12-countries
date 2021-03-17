@@ -24,6 +24,7 @@ function renderSearchResult(data){
   }
 
   else{
+    clearCountrySearchResult();
     onErrorNotification();
   }
 }
