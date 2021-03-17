@@ -1,17 +1,13 @@
 import debounce from 'lodash.debounce';
 import './styles.css';
-import fetchCountries from './countries-api/fetchCountries';
 import refs from './markup/element-refs';
-
-function clearCountrySearchResult(){
-  refs.countriesListRef.innerHTML = '';
-  refs.countryCardRef.innerHTML = '';
-} 
+import fetchCountries from './countries-api/fetchCountries';
+import clearCountrySearchResult from './markup/clear-markup';
 
 function onResultSearch(event){
   event.preventDefault();
 
-  const searchQuery = event.target.value;
+  const searchQuery = event.target.value.trim();
   if(searchQuery === ''){
     clearCountrySearchResult();
     return; 
